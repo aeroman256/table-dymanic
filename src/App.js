@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import Header from "./components/Header"
-import Filter from "./components/Filter"
+// import Header from "./components/Header"
+// import Filter from "./components/Filter"
 import Table from "./components/Table"
-import UserInfo from "./components/UserInfo"
-import Pagination from "./components/TablePagination"
+// import UserInfo from "./components/UserInfo"
+// import Pagination from "./components/TablePagination"
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <Header />
+          <Table />
+          {/* <Header />
           <Filter />
           <Table />
           <UserInfo />
-          <Pagination />
+          <Pagination /> */}
       </div>
     );
   }
