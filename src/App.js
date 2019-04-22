@@ -1,28 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header"
+import Filter from "./components/Filter"
+import Table from "./components/Table"
+import UserInfo from "./components/UserInfo"
+import Pagination from "./components/TablePagination"
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <Header />
+          <Filter />
+          <Table />
+          <UserInfo />
+          <Pagination />
       </div>
     );
   }
 }
-
+//header
+      //FilterableUsersTable -> filter
+      //                  L  -> table -> tableRows -> tableRowsInfo
+      //                  L  -> pagination
 export default App;
